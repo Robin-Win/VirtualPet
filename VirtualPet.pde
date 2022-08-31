@@ -1,21 +1,29 @@
-
 void setup(){
- size(400, 400);
+ size(600, 600);
 }
+
 void draw(){
 //background
  background(#86C1DE);
  fill(#E8DC5B);
  strokeWeight(0);
- ellipse(0, 0, 200, 200);
+//Sun
+ ellipse(0, 20, 100, 100);
+ strokeWeight(1);
+//Moon
+ ellipse(-430, 30, 90, 90);
+ fill(#86C1DE);
+ noStroke();
+ ellipse(-400, 30, 80, 100);
  strokeWeight(1);
  //legs
   fill(#8DB978);
+  stroke(0, 0, 0);
   ellipse(230, 255, 30, 50);
   ellipse(160, 255, 30, 50);
 //tail
+ stroke(0, 0, 0);
  fill(#8DB978);
- noStroke();
  triangle(100, 215, 140, 215, 135, 195);
 //body
  stroke(0, 0, 0);
@@ -49,6 +57,6 @@ void draw(){
  ellipse(310, 160, 5, 15);
 //mouth
 strokeWeight(2);
-line(310, 180, 340, 180);
+noFill();
+arc(330, 180, 40, 20, 1, PI);
 }
-
