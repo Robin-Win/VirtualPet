@@ -10,9 +10,6 @@ void draw(){
 //Sun
  ellipse(0, 20, 100, 100);
  strokeWeight(1);
-//Moon
- ellipse(-430, 30, 90, 90);
- fill(#86C1DE);
  noStroke();
  ellipse(-400, 30, 80, 100);
  strokeWeight(1);
